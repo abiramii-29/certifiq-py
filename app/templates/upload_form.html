@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifiQ - Upload Excel</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="layout">
+        <!-- Sidebar -->
+<div class="side-menu">
+    <div class="logo-group">
+        <div class="dummy-logo">
+            <span class="vector vector1"></span>
+            <span class="vector vector2"></span>
+            <span class="vector vector3"></span>
+            <span class="vector vector4"></span>
+        </div>
+        <span class="brand-name">CertifiQ</span>
+    </div>
+    <nav class="sidebar-links">
+        <a href="dashboard.html" class="sidebar-item">Dashboard</a>
+        <a href="upload.html" class="sidebar-item">Upload Excel</a>
+        <a href="themes.html" class="sidebar-item">Themes</a>
+        <a href="customize.html" class="sidebar-item">Customize Certificate</a>
+        <a href="email.html" class="sidebar-item">Email Distribution</a>
+    </nav>
+</div>
+
+<!-- Navbar -->
+<header class="top-bar">
+    <h1 class="dashboard-title">Upload Excel</h1>
+    <div class="user-info">
+        <a href="index.html" id="home" class="home-link">
+            <img src="/static/images/home.png" alt="Home icon">
+            <span>Home</span>
+        </a>
+        <img src="https://via.placeholder.com/40x40" alt="User Profile" class="profile-pic" />
+        <div class="user-details">
+            <strong>Musfiq</strong>
+            <small>Admin</small>
+        </div>
+    </div>
+</header>
+
+    </div>
+    
+    <div class="upload-excel-container">
+        <h2>Upload Excel File to Generate Certificates</h2>
+        <div class="upload-area">
+            <!-- Form integrated from File 2 -->
+            <form action="/api/excel/upload" method="post" enctype="multipart/form-data">
+                <p>Select your Excel file:</p>
+                <input type="file" name="file" id="file" required>
+                <button type="submit" class="upload-button">Upload</button>
+            </form>
+        </div>
+        <div class="file-guidelines">
+            <h3>File Format Guidelines</h3>
+            <ul>
+                <li>The Excel file should be in <code>.xlsx</code> or <code>.xls</code> format.</li>
+                <li>Ensure the file contains the following columns: Name, Email, Certificate Name, Date of Issuance.</li>
+                <li>Check for correct email addresses and avoid errors during certificate generation.</li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <p>&copy; CertifiQ 2023 - All rights reserved.</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="themes.html">Templates</a>
+                <a href="#">Automation</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
+
+

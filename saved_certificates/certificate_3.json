@@ -1,0 +1,34 @@
+{
+    "template": {
+        "template_name": "Certificate Template 1",
+        "template_html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <link rel=\"stylesheet\" href=\"/static/css/certificate.css\">\n</head>\n<body>\n    <div class=\"certificate-container\">\n        <div class=\"watermark\">Certificate</div>\n        \n        <div class=\"certificate-content\">\n            <!-- Header with Logos -->\n            <div class=\"certificate-header\">\n                <img id=\"certificate-logo\" src=\"/static/images/reclogo.png\" alt=\"Logo\" />\n            </div> \n\n            <!-- Title Section -->\n            <div class=\"title\">\n                <h1>CERTIFICATE</h1>\n                <h2>OF APPRECIATION</h2>\n            </div>\n\n            <!-- Recipient Information -->\n            <div class=\"recipient\">\n                This certificate is proudly presented to\n                <div class=\"recipient-name\">{{name}}</div>\n                <div class=\"divider\"></div>\n            </div>\n\n            <!-- Certificate Message -->\n            <div class=\"message\">\n                In recognition of your dedication and valued contribution to our event. We deeply appreciate your commitment and efforts.\n            </div>\n\n            <!-- Signature Section -->\n            <div class=\"signature-section\">\n                <div class=\"signature\">\n                    <div class=\"signature-line\"></div>\n                    <div class=\"signature-name\"></div>\n                </div>\n                <div class=\"signature\">\n                    <div class=\"signature-line\"></div>\n                    <div class=\"signature-name\"></div>\n                </div>\n            </div>\n        </div>\n\n        <!-- Footer Bar -->\n        <div class=\"footer-bar\"></div>\n    </div>\n</body>\n</html>\n",
+        "css_file": "/static/css/certificate.css"
+    },
+    "customizations": {
+        "text": [
+            {
+                "content": "New Text",
+                "fontSize": "16px",
+                "fontFamily": "Arial",
+                "color": "rgb(0, 0, 0)",
+                "position": {
+                    "x": "255.889px",
+                    "y": "472.889px"
+                }
+            }
+        ],
+        "logos": [
+            {
+                "src": "blob:http://127.0.0.1:5000/f8954e24-48c0-4153-8309-fe3387f5ae7d",
+                "position": {
+                    "x": "245.889px",
+                    "y": "383.889px"
+                },
+                "size": {
+                    "width": "100px",
+                    "height": ""
+                }
+            }
+        ]
+    }
+}
